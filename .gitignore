@@ -1,0 +1,13 @@
+/data/
+/raw_data/
+JOURNAL.md
+.jekyll-cache
+sequenceserver/
+
+site/_site/
+site/_includes/_*
+site/data/
+site/_config.yml
+
+config/sequenceserver/gage_metadata.rb
+config/jbrowse/jbrowse.conf 

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+   
+    {% include bootstrap.html %}
+  <body>
+
+    {% include header.html %}
+
+    <main>
+      <div class="container">
+        <h1> <em>{{ page.organism }}</em></h1>
+        <p> <a href="/taxa/">Back </a></p>
+
+        {% assign genomes = site.genomes | where: 'organism', page.organism %}
+        <h2>Genomes ({{ genomes | size }}) </h2>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Source accession</th>
+              <th scope="col">Source version</th>
+              <th scope="col">URL</th>
+              <th scope="col">{{ site.title }} genome ID</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for g in genomes %}
+            <tr>
+              <th scope="row">{{ g.source_name }}</td>
+              <td>{{ g.source_accession }}</td>
+              <td>{{ g.source_version }}</td>
+              <td>{{ g.source_url }}</td>
+              <td>{{ g.gage_genome_id }}</td>
+            </tr>
+
+            <tr> 
+              <td colspan="5">
+                <table class="table mb-0">
+
+                  {% assign annotations = site.annotations | where: 'gage_genome_id', g.gage_genome_id %}
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th> </th>
+                        <th scope="col" colspan=2" >Gage</th>
+                        <th scope="col" colspan="3">Source</th>
+                      </tr>
+
+                      <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Trackname</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Downloaded on</th>                       
+                      </tr>
+
+                    </thead>
+                    <tbody>
+
+                      {% for a in annotations %}
+                      <tr>
+                        <th scope="row">{{ a.annotation_type }}</th>
+                        <td>{{ a.gage_trackname }}</td> 
+                        <td>{{ a.source_name }}</td>
+                        <!-- TODO: if link is empty do not render -->
+                        <td><a href="{{ a.source_url }} "> Link </a></td>
+                        <td>{{ a.source_download_date }} </td>
+                      </tr>
+
+                      <tr class="table-info">
+                        <td>   </td>
+                        <td colspan="5">  {{ a.content }} </td>
+                      </tr>
+
+                      {% endfor %}
+
+                    </tbody>
+                  </table>
+              </td>
+            </tr>
+
+            </tr>
+            {% endfor %}
+
+          </tbody>
+        </table>
+
+      </div>
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
+
+

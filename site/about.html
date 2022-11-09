@@ -1,0 +1,31 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<div class="container">
+  <h1>About</h1>
+  <p>{% include _about.html %}</p>
+
+  <h2> Citing </h2>
+  <h3> This website </h3>
+  <ul>
+    <li> {{ site.title }} - {{ site.citation }}. Version generated on {{ site.time | date: '%y/%m/%d' }}. </li>
+  </ul>
+
+  <h3> Component software </h3>
+  <ul>
+    <li><a href="https://sequenceserver.com/">SequenceServer</a> - <a href="https://doi.org/10.1093/molbev/msz185"> Priyam et al. (2019) Sequenceserver: a modern graphical user interface for custom BLAST databases. </a> </li>
+    <li><a href="https://jbrowse.org">jBrowse (1.6.x)</a> - <a href="https://www.ncbi.nlm.nih.gov/pubmed/27072794"> Buels R et al. JBrowse: a dynamic web platform for genome visualization and analysis.Genome Biology (2016). </a> </li>
+  </ul>
+
+  <h3> Gage </h3>
+  <ul>
+    <li>Gage is open source software, <a href="">source is here.</a></li>
+  </ul>
+
+  <h2> Technical </h2>
+  <p>These pages are built with <a href="https://github.com/SpeciesFileGroup/gage">Gage</a>, a configuration framework for producing <b>G</b>enomic <b>P</b>ages.</p>
+
+</div>

@@ -1,0 +1,25 @@
+# You can provide a classification. Species names must match the form used in Metadata.
+root:
+  Animalia:
+    Arthropoda:
+      Hyalella azteca
+    Chordata:
+      Ciona intestinalis
+      Petromyzon marinus
+      Xenopus laevis
+      Xenopus tropicalis
+    Mollusca:
+      Euprymna scolopes
+      Octopus bimaculoides
+      Octopus vulgaris
+    Rotifera:
+      Adineta vaga
+  Macroalgae:
+    Chlorophyta:
+    Phaeophyta:
+      Sargassum fusiforme 
+    Rhodophyta:
+      Gracilariopsis chorda    
+  Plant:
+  Fungi:
+

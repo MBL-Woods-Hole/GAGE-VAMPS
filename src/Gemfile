@@ -1,0 +1,17 @@
+source 'https://rubygems.org'
+
+gem 'bundler', '~> 2.0'
+
+ruby '2.7.6'
+
+gem 'front_matter_parser', '~> 1.0.1'
+gem 'jekyll', '~> 4.2'
+gem 'minima', '~> 2.5'
+gem 'rainbow', '~> 3.0.0'
+
+# Technically not required but currently used. Ultimate only with a --debug run
+gem 'amazing_print', '~> 1.4'
+gem 'byebug', '~> 11.1'
+
+#gem 'sequenceserver'
+
