@@ -4,8 +4,8 @@ JOURNAL.md
 .jekyll-cache
 sequenceserver/
 
-site/_site/
-site/_includes/_*
+src/gage/stage.rb
+
 site/data/
 site/_config.yml
 
