@@ -56,12 +56,12 @@ module Gage
     }
 
     # Repository clone location
-    GAGE_DIR = '/usr/local/www/vamps/projects/seabase/gage/'
-    #GAGE_DIR = '/users/avoorhis/programming/seabase/gage/' #'/Users/matt/src/github/species_file_group/gage/'
+    #GAGE_DIR = '/usr/local/www/vamps/projects/seabase/gage/'
+    GAGE_DIR = '/users/avoorhis/programming/seabase/gage/' #'/Users/matt/src/github/species_file_group/gage/'
 
     # Data originate here
-    SOURCE_DATA_DIR = '/usr/local/www/vamps/projects/seabase/data/'
-    #SOURCE_DATA_DIR = '/users/avoorhis/programming/seabase/data/' #'/Users/matt/src/github/species_file_group/gage/raw_data'
+    #SOURCE_DATA_DIR = '/usr/local/www/vamps/projects/seabase/data/'
+    SOURCE_DATA_DIR = '/users/avoorhis/programming/seabase/data/' #'/Users/matt/src/github/species_file_group/gage/raw_data'
 
     # Raw Blast databases are here
     SOURCE_GENOME_DATA = File.expand_path('genome', SOURCE_DATA_DIR)
