@@ -4,10 +4,12 @@ JOURNAL.md
 .jekyll-cache
 sequenceserver/
 
-src/gage/stage.rb
-
+src/gage/stage.rb*
+stage*
 site/data/
 site/_config.yml
 
 config/sequenceserver/gage_metadata.rb
+config/sequenceserver/links.rb
+config/sequenceserver/sequenceserver.conf
 config/jbrowse/jbrowse.conf 
