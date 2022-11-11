@@ -9,6 +9,8 @@ stage*
 site/data/
 site/_config.yml
 
+site/_site
+
 config/sequenceserver/gage_metadata.rb
 config/sequenceserver/links.rb
 config/sequenceserver/sequenceserver.conf
