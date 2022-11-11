@@ -1,4 +1,11 @@
-
+=============
+VAMPS Configuration:
+  Original GAGE website: https://github.com/SpeciesFileGroup/gage
+  on vamps webserver: 
+  run 'module load gage' to enter correct ENV (may negate conda3 env!! )
+  then cd to gage/src before being able to run 'ruby gage.rb' to rebuild files after git pull
+  --On localhost:  URL: http://localhost:82/
+============================================================================
 TODO:
 * Installing SS happens via local copy still! 
   * Make sure that diffs there translate into web-version
