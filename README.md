@@ -4,6 +4,7 @@ VAMPS Configuration:
   on vamps webserver: 
   run 'module load gage' to enter correct ENV (may negate conda3 env!! )
   then cd to gage/src before being able to run 'ruby gage.rb' to rebuild files after git pull
+  LOG  /usr/local/www/vamps/logs/gage/gage.log
   --On localhost:  URL: http://localhost:82/
 ============================================================================
 TODO:
