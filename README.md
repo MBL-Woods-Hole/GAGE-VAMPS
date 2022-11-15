@@ -109,7 +109,8 @@ Using the example add a classification for your Taxa.
 
 ### 5) Customize the main webpages
 
-You can edit certain elements of the website by editing the `_about.md`, `_contact.md`, _footer.md` and `_index.md` files.  What these do should be self explanitory when you run the staging script and view the website.
+You can edit certain elements of the website by editing the `_about.md`, `_contact.md`, _footer.md` and `_index.md` files.  
+What these do should be self explanitory when you run the staging script and view the website.
 
 ### 6) Test and refine templates and data
 
@@ -120,7 +121,8 @@ You can edit certain elements of the website by editing the `_about.md`, `_conta
 
 At this point a processing log commences. If it passes without any warnings or fatal errors the website is ready for viewing. Address errors and warnings, and run the script again. Repeat.
 
-The build script is "idempotent", it will always completely rebuild from scratch.*  This lets you keep your two worlds isolated, edit you data in `data`, and stage processed versions where they need to be for the website.
+The build script is "idempotent", it will always completely rebuild from scratch.*  
+This lets you keep your two worlds isolated, edit you data in `data`, and stage processed versions where they need to be for the website.
 
 \* This could be customized with a little Ruby. 
 

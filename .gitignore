@@ -12,7 +12,7 @@ site/data/
 site/_config.yml
 
 site/_site/**
-site/_includes/_*
+#site/_includes/_*
 
 config/sequenceserver/gage_metadata.rb
 config/sequenceserver/links.rb
