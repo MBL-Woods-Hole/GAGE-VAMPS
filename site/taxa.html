@@ -14,7 +14,7 @@ permalink: /taxa/
     <table class="table">
       <thead class="table-light">
         <tr>
-          <th colspan="3"></th>
+          <th colspan="3">See <a href='https://vamps2.mbl.edu/portals/projects/SEABASE'>Available VAMPS Microbiome Projects</a></th>
           <th scope="col" colspan="2">Link out</th>
         </tr>
       </thead>
@@ -37,7 +37,6 @@ permalink: /taxa/
 
           {% assign genomes = site.genomes | where: 'organism', d.organism %}
           <td>{{ genomes | size }} </td>
-
           <td><a href="https://www.ncbi.nlm.nih.gov/taxonomy/{{ d.ncbi_txid }}" target='_blank'> NCBI </a></td>
           <td><a href="https://www.catalogueoflife.org/data/taxon/{{ d.col_taxon }}" target='_blank'> Catalogue of Life </a></td>
         </tr>
