@@ -3,10 +3,10 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"../../../../../../usr/local/lib/ruby/gems/3.1.0/gems/minima-2.5.1/_sass/minima.scss",
-		"../../../../../../usr/local/lib/ruby/gems/3.1.0/gems/minima-2.5.1/_sass/minima/_base.scss",
-		"../../../../../../usr/local/lib/ruby/gems/3.1.0/gems/minima-2.5.1/_sass/minima/_layout.scss",
-		"../../../../../../usr/local/lib/ruby/gems/3.1.0/gems/minima-2.5.1/_sass/minima/_syntax-highlighting.scss"
+		"../../vendor/bundle/ruby/2.7.0/gems/minima-2.5.1/_sass/minima.scss",
+		"../../vendor/bundle/ruby/2.7.0/gems/minima-2.5.1/_sass/minima/_base.scss",
+		"../../vendor/bundle/ruby/2.7.0/gems/minima-2.5.1/_sass/minima/_layout.scss",
+		"../../vendor/bundle/ruby/2.7.0/gems/minima-2.5.1/_sass/minima/_syntax-highlighting.scss"
 	],
 	"sourcesContent": [
 		"@import \"minima\";\n\n\nnav {\n    background: lightgrey;\n}\n.lead {\n   color:green;\n   font-size:20px;\n}\n\nfooter{\n   text-align:center;\n   font-size:10px;\n   font-style:italic;\n}\n.vamps-links {\n    padding:12px;\n    background:#B0C4DE;\n}",
