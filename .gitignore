@@ -11,7 +11,8 @@ stage*
 site/data/
 site/_config.yml
 
-site/_site/**  # these files are overwritten each time ruby is run
+# these files are overwritten each time ruby is run
+site/_site/**
 #site/_includes/_*
 
 config/sequenceserver/gage_metadata.rb
