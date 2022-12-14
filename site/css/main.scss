@@ -4,15 +4,20 @@
 
 @import "{{ site.theme }}";
 
-
+ul{
+   list-style-type: none;
+}
 nav {
     background: lightgrey;
+    font-size:13px;
 }
 .lead {
    color:green;
    font-size:20px;
 }
-
+header{
+  font-size:12px;
+}
 footer{
    text-align:center;
    font-size:10px;
@@ -21,4 +26,23 @@ footer{
 .vamps-links {
     padding:12px;
     background:#B0C4DE;
+}
+#info {
+  padding:20px; 
+  margin:0 150px; 
+  border:1px solid black;
+  background: #eeeeee;
+}
+#info {
+  padding:20px; 
+  margin:0 150px; 
+  border:1px solid black;
+  background: #eeeeee;
+}
+#info a{
+  color: black;
+}
+#info a:hover{
+  color: green;
+  
 }
