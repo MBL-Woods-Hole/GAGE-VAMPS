@@ -3,7 +3,7 @@
 JOURNAL.md
 .jekyll-cache
 sequenceserver/
-
+docker-compose.yml
 
 
 src/gage/stage.rb*
