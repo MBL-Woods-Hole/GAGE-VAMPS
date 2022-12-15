@@ -1,0 +1,14 @@
+
+
+sudo systemctl stop gage
+sudo docker rm $(sudo docker ps -aq)
+<update things here>
+    Be careful with links: the templates are all written so that they
+    are the only thing on the webserver. The script in the next step
+    changes them so they work on web8.
+cd src
+module load gage
+ruby gage.rb && rm -rf /usr/local/tmp/gage
+/usr/local/www/vamps/projects/seabase/scripts/vampsify-gage
+sudo systemctl start gage
+

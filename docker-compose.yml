@@ -8,16 +8,17 @@ services:
       context: .
       dockerfile: Dockerfile.development
     ports:
-      - 80:80 # local:docker
+      - 82:82 # local:docker
     volumes: # mount root directory from this machine to the container itself (live development, e.g. Rails sees changes to files without rebuilding container)
       - ./site/_site:/site # mount the Jekyll _site to the public page
       - ./config/nginx/default.conf:/etc/nginx/conf.d/default.conf
     stdin_open: true
     tty: true
-    restart: unless-stopped
-#     depends_on:
-#       - sequenceserver
-#       - jbrowse
+    # RF bug assertion https://github.com/docker/compose/issues/8523; disabled restart
+    #restart: unless-stopped
+    depends_on:
+      - sequenceserver
+      - jbrowse
   sequenceserver:
     platform: linux/x86_64
     # image: wurmlab/sequenceserver:2.0.0.rc8  # was this
