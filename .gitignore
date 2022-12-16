@@ -13,7 +13,7 @@ site/_config.yml
 
 # these files are overwritten each time ruby is run
 site/_site/**
-#site/_includes/_*
+site/_includes/_*
 
 # index.html has diferent links for local vs vamps
 site/index.html
